@@ -8,7 +8,7 @@ function ItemTable() {
 const [listOfItems, setListOfItems] = useState([]);
 
 useEffect(() => {
-    axios.get("http://localhost:3001/api/items/getItems")
+    axios.get("http://3.134.86.20/api/items/getItems")
     .then((response) => {
         const allItems = response.data.response;
         
