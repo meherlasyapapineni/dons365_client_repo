@@ -29,7 +29,7 @@ function EditNewItem(props) {
       }
       setValidated(true);
       console.log("function called")
-      Axios.post("http://localhost:3001/api/items/UpdateItem", { 
+      Axios.post("http://3.134.86.20/api/items/UpdateItem", { 
         "itemId" : id,     
         "name" : name,
         "description" : description,
