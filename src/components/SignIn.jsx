@@ -21,7 +21,7 @@ export default function (props) {
   const registerUser=(e)=>{
       e.preventDefault();
       console.log("function called")
-      Axios.post("http://localhost:3001/api/user/RegisterUser", {
+      Axios.post("http://3.134.86.20/api/user/RegisterUser", {
       "name": fullName,
       "address" : address,
       "email" : email,
@@ -34,7 +34,7 @@ export default function (props) {
   };
   const loginUser=(e)=>{
     e.preventDefault();
-    Axios.post("http://localhost:3001/api/user/Login", {
+    Axios.post("http://3.134.86.20/api/user/Login", {
         "email" : email,
         "password" : password,
     }).then((response) =>{
