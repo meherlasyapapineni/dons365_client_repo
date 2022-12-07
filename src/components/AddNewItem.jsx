@@ -35,7 +35,7 @@ function AddNewItem() {
       }
       setValidated(true);
       console.log("function called")
-      Axios.post("http://localhost:3001/api/items/AddItem", {     
+      Axios.post("http://3.134.86.20/api/items/AddItem", {     
         "name" : name,
         "description" : description,
         "price" : price,
